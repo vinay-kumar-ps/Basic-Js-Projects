@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Flipper</title>
+    <style>
+        #green {
+            background-color: green;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #red {
+            background-color: red;
+        }
+        button {
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            margin: 6px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        /* Hover effect */
+        button:hover {
+            transform: scale(1.2); /* Slightly increase size on hover */
+            opacity: 0.8; /* Make the button slightly transparent on hover */
+        }
+    </style>
+</head>
+<body>
+    <h3>Color Flipper</h3>
+    <button id="green" onclick="setColor('green')">Green</button>
+    <button id="blue" onclick="setColor('blue')">Blue</button>
+    <button id="red" onclick="setColor('red')">Red</button>
+    <button onclick="randomColor()">Random</button>
+    <script src="index.js"></script>
+</body>
+</html>
